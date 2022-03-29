@@ -9,6 +9,7 @@ const courseSchema = mongoose.Schema(
       type: Boolean,
       default: false,
     },
+    users: { type: [mongoose.Schema.Types.ObjectId], ref: "Student" },
   },
   {
     timestamps: true,
